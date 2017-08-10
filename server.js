@@ -14,7 +14,7 @@ const MongoClient = require('mongodb').MongoClient;
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-MongoClient.connect('mongodb://techito:Zse4rfv@ds141098.mlab.com:41098/react-crud', (err, database) => {
+MongoClient.connect('mongodb://', (err, database) => {
 	// start the server
 	if (err) return console.log(err);
 	let db = database;
